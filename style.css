@@ -1,0 +1,354 @@
+/* ==========================
+   GOOGLE FONTS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:#fff;
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+}
+
+/* Background */
+
+.background{
+    position:fixed;
+    inset:0;
+    z-index:-2;
+
+    background:
+    radial-gradient(circle at top,#D4AF3720,transparent 45%),
+    radial-gradient(circle at bottom,#8B6B1220,transparent 45%),
+    #050505;
+}
+
+.particles{
+    position:fixed;
+    inset:0;
+    z-index:-1;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:30px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.small-title{
+
+    font-family:'Cinzel',serif;
+    color:#D4AF37;
+    letter-spacing:5px;
+    font-size:18px;
+}
+
+.main-title{
+
+    font-family:'Great Vibes',cursive;
+    font-size:75px;
+    color:#D4AF37;
+    margin:20px 0;
+    text-shadow:0 0 30px rgba(212,175,55,.4);
+}
+
+.subtitle{
+
+    color:#ddd;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:45px;
+}
+
+/* BUTTON */
+
+.gold-btn{
+
+    display:inline-block;
+    text-decoration:none;
+    color:#000;
+    background:#D4AF37;
+
+    padding:16px 45px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.gold-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 35px #D4AF37;
+}
+
+/* Gallery */
+
+.gallery{
+
+    padding:90px 8%;
+}
+
+.gallery h2{
+
+    text-align:center;
+
+    font-family:'Cinzel';
+
+    color:#D4AF37;
+
+    margin-bottom:50px;
+
+    font-size:40px;
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+.gallery img{
+
+    width:100%;
+
+    border-radius:18px;
+
+    border:2px solid #D4AF37;
+
+    transition:.5s;
+}
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 25px #D4AF37;
+}
+
+/* LOVE LETTER */
+
+.love-letter{
+
+    padding:90px 10%;
+}
+
+.love-letter h2{
+
+    text-align:center;
+
+    color:#D4AF37;
+
+    font-family:'Great Vibes';
+
+    font-size:55px;
+
+    margin-bottom:40px;
+}
+
+.love-letter p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    line-height:2;
+
+    color:#eee;
+
+    backdrop-filter:blur(20px);
+}
+
+/* MUSIC */
+
+.music-section{
+
+    padding:80px 20px;
+
+    text-align:center;
+}
+
+.music-section h2{
+
+    color:#D4AF37;
+
+    margin-bottom:35px;
+
+    font-family:'Cinzel';
+}
+
+.music-player{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(212,175,55,.25);
+
+    padding:25px 35px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(18px);
+}
+
+#playBtn{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#D4AF37;
+
+    color:#000;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+#playBtn:hover{
+
+    transform:scale(1.1);
+
+    box-shadow:0 0 25px #D4AF37;
+}
+
+.song-info h3{
+
+    color:#fff;
+}
+
+.song-info span{
+
+    color:#D4AF37;
+}
+
+/* Counter */
+
+.counter{
+
+    padding:90px 20px;
+
+    text-align:center;
+}
+
+.counter h2{
+
+    font-family:'Cinzel';
+
+    color:#D4AF37;
+
+    margin-bottom:20px;
+}
+
+#timeTogether{
+
+    font-size:45px;
+
+    color:white;
+
+    font-weight:700;
+}
+
+/* Footer */
+
+footer{
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(212,175,55,.2);
+}
+
+footer h2{
+
+    color:#D4AF37;
+
+    font-family:'Great Vibes';
+
+    font-size:45px;
+}
+
+footer p{
+
+    color:#999;
+
+    margin-top:10px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.main-title{
+
+font-size:52px;
+
+}
+
+.gallery h2{
+
+font-size:32px;
+
+}
+
+.love-letter h2{
+
+font-size:42px;
+
+}
+
+#timeTogether{
+
+font-size:32px;
+
+}
+
+.music-player{
+
+flex-direction:column;
+
+}
+
+}
